@@ -9,8 +9,8 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
 		/>
 		<link
+			href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
 			rel="stylesheet"
-			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 		/>
 		<link
 			rel="stylesheet"
@@ -171,7 +171,7 @@
 			</nav>
 		</header>
 
-		<main>
+		<main class="font sanspro">
 			<section class="slideshow">
 				<div class="slide">
 					<img src="./images/slide.png" alt="slide" />
@@ -196,9 +196,743 @@
 					<span class="material-icons"> arrow_forward </span>
 				</div>
 				<div class="breadcrumbs">
-					<a href="#">Home</a>
-					<span class="material-icons"> east </span>
-					<a href="#">Shop</a>
+					<div class="container">
+						<div class="row">
+							<a href="#">Home</a>
+							<span class="material-icons"> east </span>
+							<a href="#">Shop</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="products">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="sidebar">
+								<div class="categories open">
+									<div class="title font montserrat">categories</div>
+									<ul class="content">
+										<li>
+											<div class="category">
+												<p class="font montserrat">version</p>
+												<span class="material-icons"> chevron_right </span>
+											</div>
+										</li>
+										<li>
+											<div class="category">
+												<p class="font montserrat">lorem ipsum</p>
+											</div>
+										</li>
+										<li>
+											<div class="category expanded">
+												<p class="font montserrat">proin</p>
+												<span class="material-icons"> chevron_right </span>
+											</div>
+											<ul class="sub-items">
+												<li>
+													<div class="date">
+														<span class="material-icons"> stop </span>
+														July 2015
+													</div>
+												</li>
+												<li>
+													<div class="date">
+														<span class="material-icons"> stop </span>
+														January 2013
+														<span class="material-icons"> chevron_right </span>
+													</div>
+												</li>
+												<li>
+													<div class="date">
+														<span class="material-icons"> stop </span>
+														March 2012
+														<span class="material-icons"> chevron_right </span>
+													</div>
+												</li>
+												<li>
+													<div class="date expanded">
+														<span class="material-icons"> stop </span>
+														January 2012
+														<span class="material-icons"> chevron_right </span>
+													</div>
+													<ul class="sub-items">
+														<li>
+															<div class="date">
+																<span class="material-icons"> stop </span>
+																July 2015
+																<span class="material-icons">
+																	chevron_right
+																</span>
+															</div>
+														</li>
+														<li>
+															<div class="date">
+																<span class="material-icons"> stop </span>
+																January 2013
+															</div>
+														</li>
+														<li>
+															<div class="date">
+																<span class="material-icons"> stop </span>
+																March 2012
+																<span class="material-icons">
+																	chevron_right
+																</span>
+															</div>
+														</li>
+														<li>
+															<div class="date">
+																<span class="material-icons"> stop </span>
+																January 2012
+																<span class="material-icons">
+																	chevron_right
+																</span>
+															</div>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="category">
+												<p class="font montserrat">gravida</p>
+												<span class="material-icons"> chevron_right </span>
+											</div>
+										</li>
+										<li>
+											<div class="category">
+												<p class="font montserrat">nibh vel velit</p>
+												<span class="material-icons"> chevron_right </span>
+											</div>
+										</li>
+										<li>
+											<div class="category">
+												<p class="font montserrat">auctor</p>
+											</div>
+										</li>
+										<li>
+											<div class="category">
+												<p class="font montserrat">aliquet</p>
+												<span class="material-icons"> chevron_right </span>
+											</div>
+										</li>
+										<li>
+											<div class="category">
+												<p class="font montserrat">aenean</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="search">
+									<input type="text" placeholder="Search for product..." />
+									<span class="material-icons-outlined"> search </span>
+								</div>
+								<div class="filter-price open">
+									<div class="title">filter by price</div>
+									<div class="content">
+										<div>
+											<input type="range" name="prive" min="345" max="3000" />
+											<div class="btn font montserrat">FILTER</div>
+											<div class="price">Price: $345-$1640</div>
+										</div>
+									</div>
+								</div>
+								<div class="filter-color open">
+									<div class="title">filter by color</div>
+									<div class="content">
+										<div class="dropdown">
+											<select name="color" id="color">
+												<option value="any color" selected>Any Color</option>
+												<option value="example">Example</option>
+											</select>
+											<span class="material-icons"> expand_more </span>
+										</div>
+									</div>
+								</div>
+								<div class="filter-size open">
+									<div class="title">filter by size</div>
+									<div class="content">
+										<div class="dropdown">
+											<select name="size" id="size">
+												<option value="any size" selected>Any Size</option>
+												<option value="example">Example</option>
+											</select>
+											<span class="material-icons"> expand_more </span>
+										</div>
+									</div>
+								</div>
+								<div class="recent-view open">
+									<div class="title">recently viewed</div>
+									<ul class="content">
+										<li>
+											<div class="img">
+												<img class="sale" src="./images/img3.png" alt="img" />
+											</div>
+											<div class="info">
+												<p class="product-title">Product Title Here</p>
+												<img src="./images/rate.png" alt="rate" />
+												<p class="price">$35.00</p>
+											</div>
+										</li>
+										<li>
+											<div class="img sale">
+												<img class="sale" src="./images/img1.png" alt="img" />
+											</div>
+											<div class="info">
+												<p class="product-title">Product Title Here</p>
+												<img src="./images/rate1.png" alt="rate" />
+												<p class="price">$35.00-$89.00</p>
+											</div>
+										</li>
+										<li>
+											<div class="img">
+												<img class="sale" src="./images/img4.png" alt="img" />
+											</div>
+											<div class="info">
+												<p class="product-title">Product Title Here</p>
+												<p class="price">$35.00</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="product-tags open">
+									<div class="title">product tags</div>
+									<ul class="content">
+										<li class="li">morbi</li>
+										<li class="li">accumsan</li>
+										<li class="li">ipsum</li>
+										<li class="li">velit</li>
+										<li class="li">nam</li>
+										<li class="li">tellus</li>
+										<li class="li">aodio</li>
+										<li class="li">tincidunt</li>
+										<li class="li">auctor</li>
+										<li class="li">aornare odi</li>
+										<li class="li">morbi</li>
+										<li class="li">accumsan</li>
+										<li class="li">ipsum</li>
+										<li class="li">velit</li>
+										<li class="li">nam</li>
+										<li class="li">tellus</li>
+										<li class="li">aodio</li>
+										<li class="li">tincidunt</li>
+										<li class="li">auctor</li>
+										<li class="li">aornare odi</li>
+									</ul>
+								</div>
+								<div class="featured-products open">
+									<div class="title">featured products</div>
+									<ul class="content">
+										<li>
+											<a href="#">
+												<div class="img">
+													<img
+														class="sale"
+														src="./images/img3.png"
+														alt="product"
+													/>
+												</div>
+												<div class="info">
+													<p class="product-title">Product Title Here</p>
+													<p class="price">$35.00-$89.99</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="img sale">
+													<img
+														class="sale"
+														src="./images/img1.png"
+														alt="product"
+													/>
+												</div>
+												<div class="info">
+													<p class="product-title">Product Title Here</p>
+													<p class="price">$35.00-$1289.99</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="img sale">
+													<img
+														class="sale"
+														src="./images/img4.png"
+														alt="product"
+													/>
+												</div>
+												<div class="info">
+													<p class="product-title">Product Title Here</p>
+													<p class="price">$35.00-$89.99</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="alert-box">
+									<div>
+										<p class="font montserrat">$5</p>
+										<p class="font montserrat">COUPON</p>
+										<p class="font montserrat">FOR FREE</p>
+										<p>
+											just signup for our newsletter and get 5$ to your account
+										</p>
+										<input type="text" placeholder="Enter Your Email..." />
+										<div class="btn font montserrat">sign up me!</div>
+									</div>
+								</div>
+								<div class="cart open">
+									<div class="title">cart</div>
+									<ul class="content">
+										<li>
+											<a href="#">
+												<div class="img">
+													<img
+														class="sale"
+														src="./images/img2.png"
+														alt="product"
+													/>
+												</div>
+												<div class="info">
+													<p class="product-title">Product Title Here</p>
+													<p class="price">1 x $35.00-$89.99</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="img sale">
+													<img
+														class="sale"
+														src="./images/img1.png"
+														alt="product"
+													/>
+												</div>
+												<div class="info">
+													<p class="product-title">Product Title Here</p>
+													<p class="price">1 x $35.00-$89.99</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+									<div class="content">
+										<div class="subtotal">
+											<p>Subtotal:</p>
+											<p>$2589.99</p>
+										</div>
+										<div class="btn view-cart font montserrat">view cart</div>
+										<div class="btn checkout font montserrat">checkout</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="items">
+							<ul class="list-items type-1">
+								<li class="col">
+									<div class="item" style="background-color: #d8e3e8">
+										<div class="info">
+											<p class="title font montserrat">sales</p>
+											<p>9 items</p>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item" style="background-color: #eaf0ee">
+										<div class="info">
+											<p class="title font montserrat">dresses</p>
+											<p>19 items</p>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item" style="background-color: #f0f3f2">
+										<div class="info">
+											<p class="title font montserrat">lingerie</p>
+											<p>5 items</p>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item" style="background-color: #eaf0ee">
+										<div class="info">
+											<p class="title font montserrat">shirts</p>
+											<p>9 items</p>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item" style="background-color: #d8e3e8">
+										<div class="info">
+											<p class="title font montserrat">accesories</p>
+											<p>19 items</p>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item" style="background-color: #f0f3f2">
+										<div class="info">
+											<p class="title font montserrat">bags</p>
+											<p>5 items</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="arrow">
+								<span class="material-icons prev"> chevron_left </span>
+								<span class="material-icons next"> chevron_right </span>
+							</div>
+							<div class="filter">
+								<div class="dropdown">
+									<select name="sort" id="sort">
+										<option value="default" selected>Default sorting</option>
+										<option value="example">Example</option>
+									</select>
+									<span class="material-icons"> expand_more </span>
+								</div>
+								<span>DESC</span>
+								<label class="switch">
+									<input type="checkbox" />
+									<span class="slider round"></span>
+								</label>
+								<span>ASC</span>
+								<span>Showing 1-12 of 17 results</span>
+								<div class="dropdown">
+									<select name="show" id="show">
+										<option value="default" selected>Show 12 on page</option>
+										<option value="example">Example</option>
+									</select>
+									<span class="material-icons"> expand_more </span>
+								</div>
+							</div>
+							<ul class="list-items type-2">
+								<li class="col">
+									<div class="item sale new">
+										<div class="info">
+											<div class="rate">
+												<img src="./images/rate.png" alt="rate" />
+											</div>
+											<p class="title font montserrat">black impression</p>
+											<p class="price">$35.00-$89.99</p>
+											<div>
+												<span class="material-icons-outlined">
+													format_list_bulleted
+												</span>
+												View Wishlist
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item">
+										<div class="info">
+											<div class="line">
+												<div></div>
+											</div>
+											<p class="title font montserrat">denim classyshorts</p>
+											<p class="price">$35.00-$89.99</p>
+											<div>
+												<span class="material-icons-outlined">
+													star_border
+												</span>
+												View Cart
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item">
+										<div class="info">
+											<div class="line">
+												<div></div>
+											</div>
+											<p class="title font montserrat">golden heels</p>
+											<p class="price">$35.00-$89.99</p>
+											<div>
+												<span class="material-icons-outlined">
+													shopping_cart
+												</span>
+												<span class="material-icons-outlined"> article </span>
+												<span class="material-icons-outlined">
+													favorite_border
+												</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item sale">
+										<div class="info">
+											<div class="rate">
+												<img src="./images/rate.png" alt="rate" />
+											</div>
+											<p class="title font montserrat">black impression</p>
+											<p class="price">$35.00-$89.99</p>
+											<div>
+												<span class="material-icons-outlined">
+													shopping_cart
+												</span>
+												<span class="material-icons-outlined"> article </span>
+												<span class="material-icons-outlined">
+													favorite_border
+												</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item new">
+										<div class="info">
+											<div class="line">
+												<div></div>
+											</div>
+											<p class="title font montserrat">denim classy shorts</p>
+											<p class="price">$35.00-$89.99</p>
+											<div>
+												<span class="material-icons-outlined">
+													shopping_cart
+												</span>
+												<span class="material-icons-outlined"> article </span>
+												<span
+													class="material-icons-outlined"
+													style="color: red"
+												>
+													favorite_border
+												</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item">
+										<div class="info">
+											<div class="line">
+												<div></div>
+											</div>
+											<p class="title font montserrat">bgolden heels</p>
+											<p class="price">$35.00-$89.99</p>
+											<div>
+												<span class="material-icons-outlined">
+													shopping_cart
+												</span>
+												<span class="material-icons-outlined"> article </span>
+												<span class="material-icons-outlined">
+													favorite_border
+												</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item">
+										<div class="info">
+											<div class="rate">
+												<img src="./images/rate.png" alt="rate" />
+											</div>
+											<p class="title font montserrat">black impression</p>
+											<p class="price">$35.00-$89.99</p>
+											<div>
+												<span class="material-icons-outlined">
+													shopping_cart
+												</span>
+												<span class="material-icons-outlined"> article </span>
+												<span class="material-icons-outlined">
+													favorite_border
+												</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item">
+										<div class="info">
+											<div class="line">
+												<div></div>
+											</div>
+											<p class="title font montserrat">denim classy shorts</p>
+											<p class="price">$35.00-$89.99</p>
+											<div>
+												<span class="material-icons-outlined">
+													shopping_cart
+												</span>
+												<span class="material-icons-outlined"> article </span>
+												<span
+													class="material-icons-outlined"
+													style="color: red"
+												>
+													favorite_border
+												</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item">
+										<div class="info">
+											<div class="line">
+												<div></div>
+											</div>
+											<p class="title font montserrat">bgolden heels</p>
+											<p class="price">$35.00-$89.99</p>
+											<div>
+												<span class="material-icons-outlined">
+													shopping_cart
+												</span>
+												<span class="material-icons-outlined"> article </span>
+												<span class="material-icons-outlined">
+													favorite_border
+												</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item">
+										<div class="info">
+											<div class="rate">
+												<img src="./images/rate.png" alt="rate" />
+											</div>
+											<p class="title font montserrat">black impression</p>
+											<p class="price">$35.00-$89.99</p>
+											<div>
+												<span class="material-icons-outlined">
+													shopping_cart
+												</span>
+												<span class="material-icons-outlined"> article </span>
+												<span class="material-icons-outlined">
+													favorite_border
+												</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item sale new">
+										<div class="info">
+											<div class="line">
+												<div></div>
+											</div>
+											<p class="title font montserrat">denim classy shorts</p>
+											<p class="price">$35.00-$89.99</p>
+											<div>
+												<span class="material-icons-outlined">
+													shopping_cart
+												</span>
+												<span class="material-icons-outlined"> article </span>
+												<span
+													class="material-icons-outlined"
+													style="color: red"
+												>
+													favorite_border
+												</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item">
+										<div class="info">
+											<div class="line">
+												<div></div>
+											</div>
+											<p class="title font montserrat">bgolden heels</p>
+											<p class="price">$35.00-$89.99</p>
+											<div>
+												<span class="material-icons-outlined">
+													shopping_cart
+												</span>
+												<span class="material-icons-outlined"> article </span>
+												<span class="material-icons-outlined">
+													favorite_border
+												</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item">
+										<div class="info">
+											<div class="rate">
+												<img src="./images/rate.png" alt="rate" />
+											</div>
+											<p class="title font montserrat">black impression</p>
+											<p class="price">$35.00-$89.99</p>
+											<div>
+												<span class="material-icons-outlined">
+													shopping_cart
+												</span>
+												<span class="material-icons-outlined"> article </span>
+												<span class="material-icons-outlined">
+													favorite_border
+												</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item">
+										<div class="info">
+											<div class="line">
+												<div></div>
+											</div>
+											<p class="title font montserrat">denim classy shorts</p>
+											<p class="price">$35.00-$89.99</p>
+											<div>
+												<span class="material-icons-outlined">
+													shopping_cart
+												</span>
+												<span class="material-icons-outlined"> article </span>
+												<span
+													class="material-icons-outlined"
+													style="color: red"
+												>
+													favorite_border
+												</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="col">
+									<div class="item">
+										<div class="info">
+											<div class="line">
+												<div></div>
+											</div>
+											<p class="title font montserrat">bgolden heels</p>
+											<p class="price">$35.00-$89.99</p>
+											<div>
+												<span class="material-icons-outlined">
+													shopping_cart
+												</span>
+												<span class="material-icons-outlined"> article </span>
+												<span class="material-icons-outlined">
+													favorite_border
+												</span>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="pagination-bar font montserrat">
+								<li class="prev">
+									<a href="#"
+										><span class="material-icons"> chevron_left </span></a
+									>
+								</li>
+								<li><a href="#" class="selected">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li class="next">
+									<a href="#"
+										><span class="material-icons"> chevron_right </span></a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>

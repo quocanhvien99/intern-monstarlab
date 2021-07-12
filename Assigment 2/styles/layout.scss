@@ -12,14 +12,14 @@ $XL: 1170px;
 .container {
 	margin: 0 auto;
 	max-width: $XL;
-	@media (max-width: $breakpoint-sm) {
-		max-width: $XS;
+	@media (max-width: $breakpoint-xl) {
+		width: $MD;
 	}
 	@media (max-width: $breakpoint-md) {
-		max-width: $SM;
+		width: $SM;
 	}
-	@media (max-width: $breakpoint-xl) {
-		max-width: $MD;
+	@media (max-width: $breakpoint-sm) {
+		width: $XS;
 	}
 	.row {
 		display: flex;
