@@ -1,0 +1,375 @@
+.font.sanspro {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.font.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+main .title {
+  background-color: #e9f0ef;
+  padding-top: 30px;
+  margin-bottom: 80px;
+}
+
+main .title .row .left-side p {
+  font-size: 50px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0 0 80px 0;
+  color: #3c3950;
+}
+
+main .title .row .left-side p span {
+  font-weight: bold;
+}
+
+main .title .row .left-side .breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .title .row .left-side .breadcrumbs a {
+  color: #00bcd4;
+  padding: 10px 0;
+  text-decoration: none;
+  border-bottom: 4px solid rgba(0, 0, 0, 0);
+}
+
+main .title .row .left-side .breadcrumbs a:last-child {
+  color: #a9b7c1;
+  border-color: #ff5252;
+}
+
+main .title .row .left-side .breadcrumbs span {
+  font-size: small;
+  color: #5f727f;
+  margin: 0 10px;
+}
+
+main .title .row img {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 30px;
+}
+
+main .steps .row div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #e9f0ef;
+  color: #a9b7c1;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: medium;
+  height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-clip-path: polygon(-28px 0, calc(100% - 32px) 0, calc(100% - 4px) 50%, calc(100% - 32px) 100%, -28px 100%, 0 50%);
+          clip-path: polygon(-28px 0, calc(100% - 32px) 0, calc(100% - 4px) 50%, calc(100% - 32px) 100%, -28px 100%, 0 50%);
+  padding-left: 30px;
+}
+
+main .steps .row div.current {
+  background-color: #ffd453;
+  color: #3c3950;
+}
+
+main .steps .row div:not(div:first-child)::after {
+  content: '';
+  background-color: #e9f0ef;
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+main .steps .row div.current:not(div:first-child)::after {
+  background-color: #ffd453;
+}
+
+@media (max-width: 992px) {
+  main .steps .row div {
+    font-size: small;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  main .steps .row div {
+    font-size: x-small;
+  }
+}
+
+main .address {
+  padding: 100px 0;
+}
+
+main .address .row .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main .address .row .col:first-child {
+  padding-right: 20px;
+}
+
+main .address .row .col:last-child {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  main .address .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .address .row .col {
+    padding: 15px;
+  }
+}
+
+main .address .row .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 0;
+  color: #3c3950;
+}
+
+main .address .row .head span {
+  margin-right: 20px;
+  font-size: larger;
+}
+
+main .address .row .billing .input label,
+main .address .row .billing .input input {
+  width: 100%;
+}
+
+main .address .row .billing .input label {
+  color: #5f727f;
+}
+
+main .address .row .billing .input label span {
+  color: red;
+}
+
+main .address .row .billing .input input {
+  padding: 10px;
+  border: 1px solid #dfe5e8;
+  margin: 10px 0 20px 0;
+}
+
+main .address .row .billing .input input::-webkit-input-placeholder {
+  color: #a9b7c1;
+}
+
+main .address .row .billing .input input:-ms-input-placeholder {
+  color: #a9b7c1;
+}
+
+main .address .row .billing .input input::-ms-input-placeholder {
+  color: #a9b7c1;
+}
+
+main .address .row .billing .input input::placeholder {
+  color: #a9b7c1;
+}
+
+main .address .row .billing .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .address .row .billing .input-group div {
+  width: 47%;
+}
+
+main .address .row .different .shipto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+
+main .address .row .different .shipto .checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 25px;
+  width: 25px;
+}
+
+main .address .row .different .shipto .checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+main .address .row .different .shipto .checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: #f5f7f6;
+  border-radius: 3px;
+  border: 1px solid #b6c6c9;
+}
+
+main .address .row .different .shipto .checkbox .checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+main .address .row .different .shipto .checkbox .checkmark:after {
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 15px;
+  border: solid #5f727f;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: translate(-50%, -60%) rotate(45deg);
+          transform: translate(-50%, -60%) rotate(45deg);
+}
+
+main .address .row .different .shipto .checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+main .address .row .different .shipto label:not(.checkbox) {
+  color: #5f727f;
+  margin: 0 20px;
+}
+
+main .address .row .different p:not(.head) {
+  color: #5f727f;
+  margin: 30px 0 10px 0;
+}
+
+main .address .row .different textarea {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #dfe5e8;
+}
+
+main .address .row .different textarea::-webkit-input-placeholder {
+  color: #a9b7c1;
+}
+
+main .address .row .different textarea:-ms-input-placeholder {
+  color: #a9b7c1;
+}
+
+main .address .row .different textarea::-ms-input-placeholder {
+  color: #a9b7c1;
+}
+
+main .address .row .different textarea::placeholder {
+  color: #a9b7c1;
+}
+
+main .address .row.direction {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .address .row.direction .btn {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  padding: 10px 20px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+main .address .row.direction #prev {
+  border-color: #3c3950;
+  color: #3c3950;
+}
+
+main .address .row.direction #prev span {
+  margin-right: 5px;
+}
+
+main .address .row.direction #prev:hover {
+  background: #3c3950;
+  color: #fff;
+}
+
+main .address .row.direction #next {
+  border-color: #00bcd4;
+  color: #00bcd4;
+}
+
+main .address .row.direction #next span {
+  margin-left: 5px;
+}
+
+main .address .row.direction #next:hover {
+  background: #00bcd4;
+  color: #fff;
+}
+/*# sourceMappingURL=shop_checkout_step2.css.map */

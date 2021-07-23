@@ -211,7 +211,12 @@
 						<div class="col">
 							<div class="sidebar">
 								<div class="categories open">
-									<div class="title font montserrat">categories</div>
+									<div
+										class="title font montserrat"
+										onclick="footerWidgetExpand(event)"
+									>
+										categories
+									</div>
 									<ul class="content">
 										<li>
 											<div class="category">
@@ -329,7 +334,9 @@
 									<span class="material-icons-outlined"> search </span>
 								</div>
 								<div class="filter-price open">
-									<div class="title">filter by price</div>
+									<div class="title" onclick="footerWidgetExpand(event)">
+										filter by price
+									</div>
 									<div class="content">
 										<div>
 											<input type="range" name="prive" min="345" max="3000" />
@@ -339,7 +346,9 @@
 									</div>
 								</div>
 								<div class="filter-color open">
-									<div class="title">filter by color</div>
+									<div class="title" onclick="footerWidgetExpand(event)">
+										filter by color
+									</div>
 									<div class="content">
 										<div class="dropdown">
 											<select name="color" id="color">
@@ -351,7 +360,9 @@
 									</div>
 								</div>
 								<div class="filter-size open">
-									<div class="title">filter by size</div>
+									<div class="title" onclick="footerWidgetExpand(event)">
+										filter by size
+									</div>
 									<div class="content">
 										<div class="dropdown">
 											<select name="size" id="size">
@@ -363,7 +374,9 @@
 									</div>
 								</div>
 								<div class="recent-view open">
-									<div class="title">recently viewed</div>
+									<div class="title" onclick="footerWidgetExpand(event)">
+										recently viewed
+									</div>
 									<ul class="content">
 										<li>
 											<div class="img">
@@ -397,7 +410,9 @@
 									</ul>
 								</div>
 								<div class="product-tags open">
-									<div class="title">product tags</div>
+									<div class="title" onclick="footerWidgetExpand(event)">
+										product tags
+									</div>
 									<ul class="content">
 										<li class="li">morbi</li>
 										<li class="li">accumsan</li>
@@ -422,7 +437,9 @@
 									</ul>
 								</div>
 								<div class="featured-products open">
-									<div class="title">featured products</div>
+									<div class="title" onclick="footerWidgetExpand(event)">
+										featured products
+									</div>
 									<ul class="content">
 										<li>
 											<a href="#">
@@ -484,7 +501,9 @@
 									</div>
 								</div>
 								<div class="cart open">
-									<div class="title">cart</div>
+									<div class="title" onclick="footerWidgetExpand(event)">
+										cart
+									</div>
 									<ul class="content">
 										<li>
 											<a href="#">
@@ -932,6 +951,360 @@
 								</li>
 							</ul>
 						</div>
+					</div>
+				</div>
+			</section>
+			<section class="brands">
+				<div class="container">
+					<div class="row">
+						<p class="title font montserrat">OUR BRANDS</p>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<div class="pagination-bar">
+							<div class="selected"></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="news">
+				<div class="container">
+					<p class="title font monserrat">LASTEST NEWS</p>
+					<ul class="row">
+						<li class="col">
+							<img src="./images/news.png" alt="thumbnail" />
+							<div class="info">
+								<div class="top">
+									<div class="author">By <a href="#">Admin</a></div>
+									<div class="status">
+										<div class="comment">
+											<span class="material-icons"> chat_bubble </span> 0
+										</div>
+										|
+										<div class="heart">
+											<span class="material-icons"> favorite </span> 1
+										</div>
+									</div>
+								</div>
+								<p class="title"><span>5 may:</span> simple blog post</p>
+								<p class="content">
+									Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+									Aenean sollicitudin, lorem
+								</p>
+								<div class="footer">
+									<div class="share">
+										<span class="material-icons"> share </span>
+									</div>
+									<div class="read font montserrat">READ MORE</div>
+								</div>
+							</div>
+						</li>
+						<li class="col">
+							<img src="./images/news.png" alt="thumbnail" />
+							<div class="info">
+								<div class="top">
+									<div class="author">By <a href="#">Admin</a></div>
+									<div class="status">
+										<div class="comment">
+											<span class="material-icons"> chat_bubble </span> 0
+										</div>
+										|
+										<div class="heart none">
+											<span class="material-icons"> favorite </span> 0
+										</div>
+									</div>
+								</div>
+								<p class="title"><span>5 may:</span> simple blog post</p>
+								<p class="content">
+									Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+									Aenean sollicitudin, lorem
+								</p>
+								<div class="footer">
+									<div class="share">
+										<span class="material-icons"> share </span>
+									</div>
+									<div class="read font montserrat">READ MORE</div>
+								</div>
+							</div>
+						</li>
+						<li class="col">
+							<img src="./images/news.png" alt="thumbnail" />
+							<div class="info">
+								<div class="top">
+									<div class="author">By <a href="#">Admin</a></div>
+									<div class="status">
+										<div class="comment">
+											<span class="material-icons"> chat_bubble </span> 0
+										</div>
+										|
+										<div class="heart">
+											<span class="material-icons"> favorite </span> 1
+										</div>
+									</div>
+								</div>
+								<p class="title"><span>5 may:</span> simple blog post</p>
+								<p class="content">
+									Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+									Aenean sollicitudin, lorem
+								</p>
+								<div class="footer">
+									<div class="share">
+										<span class="material-icons"> share </span>
+									</div>
+									<div class="read font montserrat">READ MORE</div>
+								</div>
+							</div>
+						</li>
+						<li class="col">
+							<img src="./images/news.png" alt="thumbnail" />
+							<div class="info">
+								<div class="top">
+									<div class="author">By <a href="#">Admin</a></div>
+									<div class="status">
+										<div class="comment">
+											<span class="material-icons"> chat_bubble </span> 0
+										</div>
+										|
+										<div class="heart">
+											<span class="material-icons"> favorite </span> 1
+										</div>
+									</div>
+								</div>
+								<p class="title"><span>5 may:</span> simple blog post</p>
+								<p class="content">
+									Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+									Aenean sollicitudin, lorem
+								</p>
+								<div class="footer">
+									<div class="share">
+										<span class="material-icons"> share </span>
+									</div>
+									<div class="read font montserrat">READ MORE</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<div class="container">
+				<hr />
+				<hr />
+			</div>
+			<section class="payment-shipping">
+				<div class="container">
+					<div class="row">
+						<div class="payment">
+							<div class="title">
+								<p class="font monserrat">we accept</p>
+								<img src="./images/card.png" alt="logo" />
+							</div>
+							<div class="content">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+									do eiusmod tempor incididunt ut labore et
+								</p>
+								<ul class="methods">
+									<li><img src="./images/payment-logo.png" alt="" /></li>
+									<li><img src="./images/payment-logo.png" alt="" /></li>
+									<li><img src="./images/payment-logo.png" alt="" /></li>
+									<li><img src="./images/payment-logo.png" alt="" /></li>
+									<li><img src="./images/payment-logo.png" alt="" /></li>
+									<li><img src="./images/payment-logo.png" alt="" /></li>
+									<li><img src="./images/payment-logo.png" alt="" /></li>
+									<li><img src="./images/payment-logo.png" alt="" /></li>
+									<li><img src="./images/payment-logo.png" alt="" /></li>
+								</ul>
+							</div>
+						</div>
+						<div class="shipping">
+							<div class="title">
+								<p class="font monserrat">shipping methods</p>
+								<img src="./images/box.png" alt="logo" />
+							</div>
+							<ul class="content">
+								<li>
+									<img src="./images/checkbox.png" alt="checked" />
+									<p>Lorem ipsum dolor sit amet, consectetur</p>
+								</li>
+								<li>
+									<img src="./images/checkbox.png" alt="checked" />
+									<p>Adipisicing elit, sed do eiusmod tempor</p>
+								</li>
+								<li>
+									<img src="./images/checkbox.png" alt="checked" />
+									<p>Incididunt ut labore et dolore magna aliqua</p>
+								</li>
+								<li>
+									<img src="./images/checkbox.png" alt="checked" />
+									<p>Enim ad minim veniam, quis nostrud exercitation</p>
+								</li>
+								<li>
+									<img src="./images/checkbox.png" alt="checked" />
+									<p>ullamco laboris nisi ut aliquip ex ea commodo</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="new-top-sale">
+				<div class="container">
+					<div class="row">
+						<div class="col open">
+							<div
+								class="title font montserrat"
+								onclick="footerWidgetExpand(event)"
+							>
+								new products
+							</div>
+							<ul class="content">
+								<li>
+									<a href="#">
+										<div class="img">
+											<img src="./images/img5.png" alt="product" />
+										</div>
+										<div class="info">
+											<p class="product-title">Product Title Here</p>
+											<p class="price">1 x $35.00-$1289.99</p>
+										</div>
+										<img src="./images/rate.png" alt="" class="rate" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="img">
+											<img src="./images/img6.png" alt="product" />
+										</div>
+										<div class="info">
+											<p class="product-title">Product Title Here</p>
+											<p class="price">1 x $35.00-$89.99</p>
+										</div>
+										<img src="./images/rate.png" alt="" class="rate" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="img sale">
+											<img src="./images/img7.png" alt="product" />
+										</div>
+										<div class="info">
+											<p class="product-title">Product Title Here</p>
+											<p class="price">1 x $35.00-$89.99</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col open">
+							<div
+								class="title font montserrat"
+								onclick="footerWidgetExpand(event)"
+							>
+								top rated products
+							</div>
+							<ul class="content">
+								<li>
+									<a href="#">
+										<div class="img">
+											<img src="./images/img5.png" alt="product" />
+										</div>
+										<div class="info">
+											<p class="product-title">Product Title Here</p>
+											<p class="price">1 x $35.00-$1289.99</p>
+										</div>
+										<img src="./images/rate1.png" alt="" class="rate" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="img sale">
+											<img src="./images/img6.png" alt="product" />
+										</div>
+										<div class="info">
+											<p class="product-title">Product Title Here</p>
+											<p class="price">1 x $35.00-$89.99</p>
+										</div>
+										<img src="./images/rate1.png" alt="" class="rate" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="img">
+											<img src="./images/img7.png" alt="product" />
+										</div>
+										<div class="info">
+											<p class="product-title">Product Title Here</p>
+											<p class="price">1 x $35.00-$89.99</p>
+										</div>
+										<img src="./images/rate1.png" alt="" class="rate" />
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col open">
+							<div
+								class="title font montserrat"
+								onclick="footerWidgetExpand(event)"
+							>
+								new products
+							</div>
+							<ul class="content">
+								<li>
+									<a href="#">
+										<div class="img sale">
+											<img src="./images/img5.png" alt="product" />
+										</div>
+										<div class="info">
+											<p class="product-title">Product Title Here</p>
+											<p class="price">1 x $35.00-$1289.99</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="img sale">
+											<img src="./images/img6.png" alt="product" />
+										</div>
+										<div class="info">
+											<p class="product-title">Product Title Here</p>
+											<p class="price">1 x $35.00-$89.99</p>
+										</div>
+										<img src="./images/rate.png" alt="" class="rate" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="img sale">
+											<img src="./images/img7.png" alt="product" />
+										</div>
+										<div class="info sale">
+											<p class="product-title">Product Title Here</p>
+											<p class="price">1 x $35.00-$89.99</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="content">
+				<div class="container">
+					<div class="row">
+						<img src="./images/diamond.png" alt="diamond" />
+						<p class="font montserrat">
+							<span>sell more</span> with the gem shop!
+						</p>
+						<div class="purchase font monserrat">purchase now!</div>
 					</div>
 				</div>
 			</section>

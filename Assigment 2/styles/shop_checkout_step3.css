@@ -1,0 +1,512 @@
+.font.sanspro {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.font.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+main .title {
+  background-color: #e9f0ef;
+  padding-top: 30px;
+  margin-bottom: 80px;
+}
+
+main .title .row .left-side p {
+  font-size: 50px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0 0 80px 0;
+  color: #3c3950;
+}
+
+main .title .row .left-side p span {
+  font-weight: bold;
+}
+
+main .title .row .left-side .breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .title .row .left-side .breadcrumbs a {
+  color: #00bcd4;
+  padding: 10px 0;
+  text-decoration: none;
+  border-bottom: 4px solid rgba(0, 0, 0, 0);
+}
+
+main .title .row .left-side .breadcrumbs a:last-child {
+  color: #a9b7c1;
+  border-color: #ff5252;
+}
+
+main .title .row .left-side .breadcrumbs span {
+  font-size: small;
+  color: #5f727f;
+  margin: 0 10px;
+}
+
+main .title .row img {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 30px;
+}
+
+main .steps .row div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #e9f0ef;
+  color: #a9b7c1;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: medium;
+  height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-clip-path: polygon(-28px 0, calc(100% - 32px) 0, calc(100% - 4px) 50%, calc(100% - 32px) 100%, -28px 100%, 0 50%);
+          clip-path: polygon(-28px 0, calc(100% - 32px) 0, calc(100% - 4px) 50%, calc(100% - 32px) 100%, -28px 100%, 0 50%);
+  padding-left: 30px;
+}
+
+main .steps .row div.current {
+  background-color: #ffd453;
+  color: #3c3950;
+}
+
+main .steps .row div:not(div:first-child)::after {
+  content: '';
+  background-color: #e9f0ef;
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+main .steps .row div.current:not(div:first-child)::after {
+  background-color: #ffd453;
+}
+
+@media (max-width: 992px) {
+  main .steps .row div {
+    font-size: small;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  main .steps .row div {
+    font-size: x-small;
+  }
+}
+
+main .order {
+  margin: 90px 0;
+}
+
+main .order table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #dfe5e8;
+}
+
+main .order table caption {
+  font-size: xx-large;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #3c3950;
+}
+
+main .order table caption p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+main .order table caption p span {
+  font-size: 2.5rem;
+  margin-right: 20px;
+}
+
+main .order table tr:nth-child(odd) {
+  background-color: #f0f3f2;
+}
+
+main .order table tr th {
+  background-color: #b6c6c9;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 20px 0;
+}
+
+main .order table tr th:not(:first-child) {
+  text-align: center;
+}
+
+main .order table tr th:first-child {
+  padding-left: 20px;
+}
+
+main .order table tr td:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  padding-left: 20px;
+}
+
+main .order table tr td:nth-child(1) img {
+  width: 60px;
+  padding: 20px 0;
+}
+
+main .order table tr td:nth-child(1) p {
+  margin: 0 20px;
+  color: #00bcd4;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+main .order table tr td:nth-child(1) p span {
+  font-size: small;
+  color: #a9b7c1;
+  margin-left: 15px;
+}
+
+main .order table tr td:nth-child(2) {
+  width: 15%;
+  text-align: center;
+  color: #3c3950;
+}
+
+main .order table tr td:nth-child(3) {
+  width: 15%;
+  text-align: center;
+  font-size: larger;
+  color: #a9b7c1;
+}
+
+main .order .table-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #dfe5e8;
+  border-top: none;
+  padding: 0 20px 10px 20px;
+}
+
+main .order .table-footer .coupon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 20px;
+}
+
+main .order .table-footer .coupon input {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 10px 20px;
+  background: #f5f7f6;
+  border-radius: 3px;
+  border: 1px solid #dfe5e8;
+}
+
+main .order .table-footer .coupon input::-webkit-input-placeholder {
+  color: #a9b7c1;
+}
+
+main .order .table-footer .coupon input:-ms-input-placeholder {
+  color: #a9b7c1;
+}
+
+main .order .table-footer .coupon input::-ms-input-placeholder {
+  color: #a9b7c1;
+}
+
+main .order .table-footer .coupon input::placeholder {
+  color: #a9b7c1;
+}
+
+main .order .table-footer .coupon .apply {
+  border: 3px solid #00bcd4;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 113px;
+  color: #00bcd4;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+main .order .table-footer .coupon .apply:hover {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+main .order .table-footer .info {
+  margin-left: auto;
+  width: 335px;
+}
+
+main .order .table-footer .info p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: capitalize;
+  color: #5f727f;
+  padding: 20px 0;
+  margin: 0;
+}
+
+main .order .table-footer .info p:nth-child(2) {
+  border-color: #dfe5e8;
+  border-style: solid;
+  border-width: 1px 0;
+}
+
+main .order .table-footer .info p:nth-child(2) span {
+  color: #a9b7c1;
+}
+
+main .order .table-footer .info p span {
+  margin-left: auto;
+}
+
+main .order .table-footer .info p:first-child span {
+  font-size: larger;
+  color: #3c3950;
+}
+
+main .order .table-footer .info p:last-child span {
+  font-size: x-large;
+  font-weight: 300;
+  color: #00bcd4;
+}
+
+main .payment-method {
+  margin-bottom: 100px;
+}
+
+main .payment-method ul {
+  list-style: none;
+  padding: 0;
+}
+
+main .payment-method ul li {
+  position: relative;
+  padding: 20px 0;
+  border-color: #dfe5e8;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+}
+
+main .payment-method ul li label {
+  color: #5f727f;
+}
+
+main .payment-method ul li .collapse {
+  display: none;
+  background-color: #a3e7f0;
+  border-radius: 10px;
+  padding: 30px 100px 30px 30px;
+  margin-top: 20px;
+}
+
+main .payment-method ul li .collapse .check-circle {
+  min-width: 50px;
+  height: 50px;
+  background-color: #84b2c0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  margin-right: 40px;
+}
+
+main .payment-method ul li input:checked ~ .collapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .payment-method ul li img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main .payment-method ul li a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+main .payment-method ul li .direction {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .payment-method ul li .direction .btn {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  padding: 10px 20px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+main .payment-method ul li .direction #prev {
+  border-color: #3c3950;
+  color: #3c3950;
+}
+
+main .payment-method ul li .direction #prev span {
+  margin-right: 5px;
+}
+
+main .payment-method ul li .direction #prev:hover {
+  background: #3c3950;
+  color: #fff;
+}
+
+main .payment-method ul li .direction #next {
+  border-color: #00bcd4;
+  color: #00bcd4;
+}
+
+main .payment-method ul li .direction #next span {
+  margin-left: 5px;
+}
+
+main .payment-method ul li .direction #next:hover {
+  background: #00bcd4;
+  color: #fff;
+}
+
+main .payment-method .direction {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .payment-method .direction .btn {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  padding: 10px 20px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+main .payment-method .direction #prev {
+  border-color: #3c3950;
+  color: #3c3950;
+}
+
+main .payment-method .direction #prev span {
+  margin-right: 5px;
+}
+
+main .payment-method .direction #prev:hover {
+  background: #3c3950;
+  color: #fff;
+}
+
+main .payment-method .direction #next {
+  border-color: #00bcd4;
+  color: #fff;
+  background: #00bcd4;
+}
+
+main .payment-method .direction #next span {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=shop_checkout_step3.css.map */
